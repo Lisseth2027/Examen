@@ -6,79 +6,93 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Pagina de Uber</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
     <div class="navbar">
-        <nav>
-            <a href="">Uber</a>
+        <nav class="links1">
+            <span>Uber</span>
             <a href="">viaja</a>
             <a href="">Conduce</a>
             <a href="">Empresas</a>
             <a href="">Uber eats</a>
             <a href="">Quienes somos</a>
-        </nav><br><br>
+        </nav>
+
+    </div>
     </div>
 
     <h1>Viaja a cualquier lugar con la app de Uber</h1>
 
 
     <div class="contenido de la pagina web">
-        <input type="text" placeholder="punto de partida"><br><br>
-        <input type="text" placeholder="Destino"><br><br>
-    </div>
-    <main class="imagen1">
-        <img src="img/Imagen.web.jpg" alt="">
-    </main>
-    <div>
-        <label for="fecha">Fecha</label>
-        <input type="date" placeholder="Hoy">
-        <label for="hora">Hora</label>
-        <input type="time" placeholder="Ahora">
-    </div><br>
-    <nav>
+        <div class="campo-iconos">
+            <i class="fas fa-circle icono-izq"></i>
+            <input type="text" placeholder="punto de partida"><br><br>
+            <i class="fas fa-location-arrow icono-der"></i>
+        </div>
+        <div class="campo-iconos">
+            <div class="linea"></div>
+            <i class="fas fa-square icono-izq"></i>
+            <input type="text" placeholder="Destino"><br><br>
+        </div>
+        <main class="imagen1">
+            <img src="img/Imagen.web.jpg" alt="">
+        </main>
+        <div class="icono-fecha">
+            <i class="fas fa-date icono-izq"></i>
+            <label for="fecha">Fecha</label>
+            <input type="date" placeholder="Hoy">
+        </div>
+        <div class="icono-hora">
+            <i class="fas fa-time icono-izq"></i>
+            <label for="hora">Hora</label>
+            <input type="time" placeholder="Ahora">
+        </div><br>
         <button id="first">Ver precios</button><br><br>
-        <a href="">Inicia sesión para ver tu actividad reciente</a>
-    </nav>
+        <nav>
+            <a id="primer">Inicia sesión para ver tu actividad reciente</a>
+        </nav>
 
-    <h2>Sugerencias</h2><br><br>
-    <form class="Tarjeta">
-        <h5>Viaje</h5>
-        <div>
+        <h2>Sugerencias</h2><br><br>
+        <form class="Tarjeta">
+            <h5>Viaje</h5>
+            <div>
+                <p id="parrafo">
+                    Viaje a cualquier lugar con la app de Uber. Pida un viaje subase y relajese. <br><br>
+                    <button>Detalles</button>
+                <div class="imagen2">
+                    <img src="img/imagen2.web.jpg" alt="">
+                </div>
+                </p><br>
+        </form>
+        <form class="Tarjeta2">
+            <h5>Reserve</h5>
             <p id="parrafo">
-                Viaje a cualquier lugar con la app de Uber. Pida un viaje subase y relajese.
-            <div class="imagen2">
-                <img src="img/imagen2.web.jpg" alt="">
+                Reserve su viaje con anticipación para que pueda relajarse ese día. <br><br>
+                <button>Detalles</button>
+            <div class="imagen3">
+                <img src="img/imagen3.web.jpg" alt="">
             </div>
-            <button>Detalles</button>
             </p><br>
-    </form>
-    <form class="Tarjeta2">
-        <h5>Reserve</h5>
-        <p id="parrafo">
-            Reserve su viaje con anticipación para que pueda relajarse ese día.
-            <button>Detalles</button>
-        <div class="imagen3">
-            <img src="img/imagen3.web.jpg" alt="">
-        </div>
-        </p><br>
-    </form>
-    <form class="Tarjeta3">
-        <h5>Flash</h5>
-        <p id="parrafo">
-            Uber hace que la entrega de articulos el mismo dia sea mas facil que nunca.
-            <button>Detalles</button>
-        <div class="imagen4">
-            <img src="img/imagen.4web.jpg" alt="">
-        </div>
-        </p>
-        </div>
+        </form>
+        <form class="Tarjeta3">
+            <h5>Flash</h5>
+            <p id="parrafo">
+                Uber hace que la entrega de articulos el mismo dia sea mas facil que nunca. <br><br>
+                <button>Detalles</button>
+            <div class="imagen4">
+                <img src="img/imagen.4web.jpg" alt="">
+            </div>
+            </p>
+    </div>
     </form><br>
     <form class="Tarjeta4">
         <h5>Moto</h5>
         <p id="parrafo">
-            Obten viajes economicos en minutos desde la puerta de tu casa
+            Obten viajes economicos en minutos desde la puerta de tu casa. <br><br>
             <button>Detalles</button>
         <div class="imagen5">
             <img src="img/imagen6.web.jpg" alt="">
@@ -88,7 +102,7 @@
     <form class="Tarjeta5">
         <h5>Alimentos</h5>
         <p id="parrafo">
-            Pida a domicilio en los restaurantes de su zona con la app de Uber Eats
+            Pida a domicilio en los restaurantes de su zona con la app de Uber Eats. <br><br>
             <button>Detalles</button>
         <div id="imagen6">
             <img src="img/imagen.5web.jpg" alt="">
@@ -131,7 +145,7 @@
             Cancela sin cargo con hasta 60 minutos de anticipación.
         </p>
         <nav>
-            <a href="">Consulta los terminos</a>
+            <a class="segundo">Consulta los terminos</a>
         </nav>
     </main>
     <form action="">
@@ -143,7 +157,7 @@
             </p>
             <nav>
                 <button id="button_last">Comenzar</button>
-                <a href="">¿Ya tienes una cuenta?Iniciar sesión</a>
+                <a class="tercero">¿Ya tienes una cuenta?Iniciar sesión</a>
             </nav>
         </div>
     </form>
@@ -159,14 +173,103 @@
                 gestionar viajes y comida globales, así como entregas locales.
             </p>
             <button id="button_end">Comenzar</button>
-            <nav>
-                <a href="">Conoce nuestras soluciones</a>
-            </nav>        
-            </div>
+            <a href="">Conoce nuestras soluciones</a>
+        </div>
     </form>
     <div class="imagen10">
-    <img src="img/imagen9.web.jpg" alt="">
+        <img src="img/imagen9.web.jpg" alt="">
     </div>
+    <section class="apps">
+        <h2>Es más fácil con las apps</h2>
+
+        <div class="app-cards">
+            <div class="app-card">
+                <img src="img/Código QR socios Uber.png" alt="Código QR Uber">
+                <div class="app-info">
+                    <h3>Descarga la app de Uber</h3>
+                    <p>Escanea para descargar</p>
+                </div>
+                <span class="arrow">→</span>
+            </div>
+
+            <div class="app-card">
+                <img src="img/Código QR Uber.png" alt="Código QR socios Uber">
+                <div class="app-info">
+                    <h3>Descarga la app para socios</h3>
+                    <p>Escanea para descargar</p>
+                </div>
+                <span class="arrow">→</span>
+            </div>
+        </div>
+    </section>
+
+    <span class="arrow">→</span>
+    </div>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <h2>Uber</h2>
+            <a href="#">Visita el Centro de ayuda</a>
+        </div>
+
+        <div class="footer-columns">
+            <div class="columna1">
+                <h4>Compañía</h4>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Lo que ofrecemos</a></li>
+                    <li><a href="#">Sala de prensa</a></li>
+                    <li><a href="#">Inversionistas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Oportunidades laborales</a></li>
+                </ul>
+            </div>
+            <div class="columna2">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#">Viaja</a></li>
+                    <li><a href="#">Conduce</a></li>
+                    <li><a href="#">Hacer entregas</a></li>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="#">Uber para Empresas</a></li>
+                    <li><a href="#">Uber Freight</a></li>
+                    <li><a href="#">Tarjetas de regalo</a></li>
+                    <li><a href="#">Uber Health</a></li>
+                </ul>
+            </div>
+            <div class="columna3">
+                <h4>Ciudadanía global</h4>
+                <ul>
+                    <li><a href="#">Seguridad</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="columna4">
+                <h4>Viajes</h4>
+                <ul>
+                    <li><a href="#">Reserva</a></li>
+                    <li><a href="#">Aeropuertos</a></li>
+                    <li><a href="#">Ciudades</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="language-location">
+                <span>Español (Internacional)</span>
+                <span> San Salvador</span>
+            </div>
+            <p>&copy; 2025 Uber Technologies, Inc.</p>
+            <a href="#">Privacidad</a>
+            <a href="#">Accesibilidad</a>
+            <a href="#">Términos</a>
+            </div>
+
+            <div class="price-bar">
+                <a href="#" class="ver-precios">Ver precios</a>
+            </div>
+        </footer>
+
 
 
 </body>

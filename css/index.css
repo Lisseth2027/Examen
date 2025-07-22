@@ -25,7 +25,6 @@ div {
 
 
 nav a {
-
     margin-right: 0px;
     font-size: 15px;
     text-decoration: none;
@@ -33,9 +32,10 @@ nav a {
     margin-top: 0px;
     color: white;
 
+}
 
-
-
+a {
+    color: black;
 }
 
 h1 {
@@ -74,7 +74,7 @@ h1 {
     height: 150px;
     margin: 350px;
     font-family: 'Segoe UI', sans-serif;
-    margin-top: -240px;
+    margin-top: -225px;
     left: 100px;
 }
 
@@ -234,14 +234,14 @@ form h1 {
     font-size: 40px;
     width: 500px;
     margin-top: 150px;
-    left:900px;
+    left: 900px;
 }
 
 .parraf10 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 20px;
-    margin-left:900px;
+    margin-left: 900px;
     width: 500px;
 }
 
@@ -264,12 +264,14 @@ form h1 {
     color: black;
 
 }
-.subtema2{
-    background-color:  rgb(131, 212, 152);
+
+.subtema2 {
+    background-color: rgb(131, 212, 152);
     font-size: 40px;
     width: 400px;
 }
-.tema4{
+
+.tema4 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     width: 300px;
@@ -279,17 +281,22 @@ form h1 {
     margin-left: 900px;
     margin-top: -500px;
 }
-form img{
+
+form img {
     width: 100px;
     height: 50px;
+    margin-left: 100px;
+    margin-top: -50px;
 }
-.tema5{
+
+.tema5 {
     margin: 10px;
     margin-top: 500px;
     font-size: 40px;
     width: 450px;
 }
-.imagen10{
+
+.imagen10 {
     padding-left: 600px;
     width: 350px;
     height: 300px;
@@ -297,12 +304,14 @@ form img{
     position: absolute;
     left: 200px;
 }
-.subtema_final{
+
+.subtema_final {
     margin: 10px;
     font-size: 20px;
     width: 680px;
 }
-#button_end{
+
+#button_end {
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -310,7 +319,8 @@ form img{
     width: 150px;
     height: 50px;
 }
-#button_last{
+
+#button_last {
     background-color: black;
     color: white;
     border-radius: 5px;
@@ -318,11 +328,243 @@ form img{
     width: 150px;
     height: 50px;
 }
-#first{
+
+#first {
     background-color: black;
     color: white;
     border-radius: 5px;
     font-size: large;
     width: 150px;
     height: 50px;
+}
+
+.botonth {
+    background-color: black;
+    color: white;
+}
+
+input {
+    background-color: beige;
+}
+
+#primer {
+    color: black;
+}
+
+.segundo {
+    color: black;
+}
+
+.tercero {
+    color: black;
+    line-height: normal;
+}
+
+.apps {
+    background-color: #f6f6f6;
+    padding: 60px 40px;
+    text-align: left;
+}
+
+.apps h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.app-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.app-card {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.app-card img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.app-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.app-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.arrow {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px
+}
+
+.i {
+    left: -200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header.Barra {
+    background-color: #fff;
+    padding: 1px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header,
+Barra .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header.barra button {
+    margin: 4px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-content {
+   display: flex;
+   flex: 1px;
+}
+
+.hero-img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.travel-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-buttons .btn-black {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.sugerencias .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    text-emphasis: center;
+}
+
+.card img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.sesion,
+.viaja {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+#btn-ini,
+#btn-crr,
+#sig {
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#link {
+    color: blue;
+    text-decoration: underline;
+}
+footer li{
+    color: white;
+}
+footer a{
+    color: white;
+    margin-top: auto;
+}
+footer h2{
+    color: white;
+    margin-top: auto;
+}
+footer h4{
+    color: white;
+    margin-top: auto;
+}
+footer{
+    background-color: black;
+}
+.footer-columns{
+    left: auto;
+    column-gap: normal;
+    column-count: initial;
+}
+ul{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.columna1{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.columna2{
+    margin-left: 300px;
+    margin-top: -180px;
+}
+.columna3{
+    margin-left: 600px;
+    margin-top: -180px;
+}
+.columna4{
+    margin-left: 900px;
+    margin-top: -100px;
 }
